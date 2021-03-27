@@ -1,17 +1,11 @@
 <?php
 
 error_reporting(0);
-//Òåñòîâîå ïîäêëþ÷åíèå ê áä íà îïåíñåðâåðå
-/*$dbhost = "localhost";
-$dbname = "test";
-$dbuname = "mysql";
-$dbpass = "mysql";*/
 
-//Áîåâîå
-$db_host="mysql.zzz.com.ua";
-$db_user="anal003";
-$db_password="huy123456A";
-$db_name = "anal003";
+$dbhost = "localhost";
+$dbname = "dragon";
+$dbuname = "root";
+$dbpass = "SFgLqI##dc7b";
 
 // End the transaction
 if(!defined('END_TRANSACTION')) {
@@ -46,7 +40,7 @@ if (!function_exists("floatval")) {
 
 
 /*
-Âîçìîæíî, ïîíàäîáèòñÿ
+Возможно, понадобится
 if (isset($_SERVER['HTTP_ACCEPT_ENCODING']) && strpos($_SERVER['HTTP_ACCEPT_ENCODING'], 'gzip') !== false && @extension_loaded('zlib') && !headers_sent()) {
    ob_start('ob_gzhandler');
    ob_implicit_flush(0);
@@ -102,15 +96,6 @@ if(isset($_SERVER['QUERY_STRING']) && (!stripos_clone($_SERVER['QUERY_STRING'], 
     }
 }
 
-try {
-
-	# MySQL ÷åðåç PDO_MYSQL
-	$dbh = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuname, $dbpass);
-
-}
-catch(PDOException $e) {
-	echo $e->getMessage();
-}
 
 
 if(!defined("SQL_LAYER"))
